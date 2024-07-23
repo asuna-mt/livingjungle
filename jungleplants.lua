@@ -96,11 +96,11 @@ minetest.register_node("livingjungle:alocasia", {
 		place_on = {"livingjungle:leafyjungleground"},
 		sidelen = 16,
 		noise_params = {
-			offset = -0.03,
-			scale = 0.08,
+			offset = -0.025,
+			scale = 0.09,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 3602,
-			octaves = 7,
+			octaves = 4,
 			persist = 0.9,
 		},
 		y_max = 31000,
@@ -134,11 +134,11 @@ minetest.register_node("livingjungle:flamingoflower", {
 		place_on = {"livingjungle:leafyjungleground"},
 		sidelen = 16,
 		noise_params = {
-			offset = -0.03,
-			scale = 0.08,
+			offset = -0.025,
+			scale = 0.09,
 			spread = {x = 100, y = 100, z = 100},
 			seed = 722,
-			octaves = 7,
+			octaves = 4,
 			persist = 0.9,
 		},
 		y_max = 31000,
@@ -624,7 +624,7 @@ minetest.register_node("livingjungle:mangrove_leaves", {
 minetest.register_decoration({
     name = "livingjungle:mangrovetree",
     deco_type = "schematic",
-    place_on = {"livingjungle:leafyjungleground", "livingjungle:jungleground"},
+    place_on = {"default:sand"},
     place_offset_y = -1,
     sidelen = 16,
 		noise_params = {
@@ -637,7 +637,7 @@ minetest.register_decoration({
 		},
     y_max = 0,
     y_min = 0,
-    biomes = {"default:rainforest_ocean", "livingjungle:jungle"},
+    biomes = {"livingjungle:jungle_shore","junglee_shore"},
     schematic = minetest.get_modpath("livingjungle").."/schematics/livingjungle_mangrovetree.mts",
 	flags = "place_center_x, place_center_z",
     flags = "force_placement",
@@ -647,7 +647,7 @@ minetest.register_decoration({
 minetest.register_decoration({
     name = "livingjungle:mangrovetree2",
     deco_type = "schematic",
-    place_on = {"livingjungle:leafyjungleground", "livingjungle:jungleground", "default:dirt"},
+    place_on = {"default:sand"},
     place_offset_y = -1,
     sidelen = 16,
 		noise_params = {
@@ -660,7 +660,7 @@ minetest.register_decoration({
 		},
     y_max = 0,
     y_min = 0,
-    biomes = {"default:rainforest_ocean", "livingjungle:jungle"},
+    biomes = {"livingjungle:jungle_shore","junglee_shore"},
     schematic = minetest.get_modpath("livingjungle").."/schematics/livingjungle_mangrovetree2.mts",
 	flags = "place_center_x, place_center_z",
     flags = "force_placement",
@@ -670,7 +670,7 @@ minetest.register_decoration({
 minetest.register_decoration({
     name = "livingjungle:mangrovetree2",
     deco_type = "schematic",
-    place_on = {"livingjungle:leafyjungleground", "livingjungle:jungleground", "default:dirt"},
+    place_on = {"default:sand"},
     place_offset_y = -1,
     sidelen = 16,
 		noise_params = {
@@ -683,7 +683,7 @@ minetest.register_decoration({
 		},
     y_max = 0,
     y_min = 0,
-    biomes = {"default:rainforest_ocean", "livingjungle:jungle"},
+    biomes = {"livingjungle:jungle_shore","junglee_shore"},
     schematic = minetest.get_modpath("livingjungle").."/schematics/livingjungle_mangrovetree2.mts",
 	flags = "place_center_x, place_center_z",
     flags = "force_placement",
@@ -693,7 +693,7 @@ minetest.register_decoration({
 minetest.register_decoration({
     name = "livingjungle:mangrovetree3",
     deco_type = "schematic",
-    place_on = {"livingjungle:leafyjungleground", "livingjungle:jungleground", "default:dirt"},
+    place_on = {"default:sand"},
     place_offset_y = -1,
     sidelen = 16,
 		noise_params = {
@@ -706,7 +706,7 @@ minetest.register_decoration({
 		},
     y_max = 0,
     y_min = 0,
-    biomes = {"default:rainforest_ocean", "livingjungle:jungle"},
+    biomes = {"livingjungle:jungle_shore","junglee_shore"},
     schematic = minetest.get_modpath("livingjungle").."/schematics/livingjungle_mangrovetree3.mts",
 	flags = "place_center_x, place_center_z",
     flags = "force_placement",
